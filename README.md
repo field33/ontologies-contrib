@@ -9,4 +9,7 @@ We welcome all forms of contributions.
 
 ## License
 
-Code submitted to the Field 33 ontologies-contrib repo is licensed under the terms defined in the LICENSE file.
+Code and ontologies/data contributed to the ontologies-contrib repository are licensed as follows:
+
+- Code is licensed under the [MIT License](LICENSE-MIT).
+- Ontologies and related datasets/databases are licensed under the [CC-BY license](LICENSE-CC-BY).
