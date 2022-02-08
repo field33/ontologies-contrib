@@ -1,11 +1,13 @@
 # Field 33 ontologies-contrib
 
-Community-maintained
+A collection of community-maintained ontologies empowered by Field 33 tooling!
 
 ## Contributing
 
-We welcome all forms of contributions.
+We appreciate all forms of contributions, be it full ontologies, or just small typo corrections.
 
+See the [contribution guide](CONTRIBUTING.md) for a full outline of the contribution process.
+Right now it's best to get in touch via [contribution@field33.com](mailto:contribution@field33.com?subject=I%20want%20to%20contribute%20an%20ontology%20(ontologies-contrib)).
 
 ## License
 
