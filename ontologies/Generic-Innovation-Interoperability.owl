@@ -1,37 +1,73 @@
-@prefix : <http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/> .
+@prefix : <http://field33.com/ontologies/@contrib/generic_innovation_interoperability/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix field33_virtual: <http://field33.com/ontologies/VIRTUAL/> .
-@base <http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/> .
+@prefix registry: <http://field33.com/ontologies/REGISTRY/> .
+@base <http://field33.com/ontologies/@contrib/generic_innovation_interoperability/> .
 
-<http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/> rdf:type owl:Ontology ;
-                                                                                          field33_virtual:canonicalPrefix "@ontologies-contrib/generic-innovation-interoperability" ;
-                                                                                          field33_virtual:canonicalPrefixIri "http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/" ;
-                                                                                          field33_virtual:ontologyFormatVersion "v1" ;
-                                                                                          <http://purl.org/dc/elements/1.1/creator> """Lamy ELBA, Ph.D.
+<http://field33.com/ontologies/@contrib/generic_innovation_interoperability/> rdf:type owl:Ontology ;
+                                                                               registry:author """Lamy ELBA, Ph.D.
 Innovation & Entrepreneurship
 lamyaa.elbassiti@gmail.com"""@en ;
-                                                                                          <http://purl.org/dc/elements/1.1/description> "An Ontology for Generic Innovation Interoperability" ;
-                                                                                          <http://purl.org/dc/elements/1.1/title> "OntoGenI" ;
-                                                                                          rdfs:comment "Based on my PhD research project summarized in the following book chapter: EL BASSITI, L. (2018). Innovation Management: Systematic Structuration, Semantic Interoperability & Multi-Dimension Measurement, New Waves in Innovation Management Research (ISPIM Insights), Vernon Press, 324-384." .
+                                                                               registry:canonicalPrefix "generic_innovation_interoperability" ;
+                                                                               registry:category "Innovation"@en ,
+                                                                                                 "Interoperability"@en ;
+                                                                               registry:keyword "Generic Innovation Interoperability"@en ,
+                                                                                                "Innovation"@en ,
+                                                                                                "Interoperability"@en ;
+                                                                               registry:ontologyFormatVersion "v1" ;
+                                                                               registry:packageName "@contrib/generic_innovation_interoperability" ;
+                                                                               registry:packageVersion "0.1.1" ;
+                                                                               registry:repository "https://github.com/field33/ontologies-contrib/blob/main/ontologies" ;
+                                                                               registry:shortDescription "An Ontology for Generic Innovation Interoperability"@en ;
+                                                                               <http://purl.org/dc/elements/1.1/creator> """Lamy ELBA, Ph.D.
+Innovation & Entrepreneurship
+lamyaa.elbassiti@gmail.com"""@en ;
+                                                                               <http://purl.org/dc/elements/1.1/description> "An Ontology for Generic Innovation Interoperability" ;
+                                                                               <http://purl.org/dc/elements/1.1/title> "OntoGenI" ;
+                                                                               rdfs:comment "Based on my PhD research project summarized in the following book chapter: EL BASSITI, L. (2018). Innovation Management: Systematic Structuration, Semantic Interoperability & Multi-Dimension Measurement, New Waves in Innovation Management Research (ISPIM Insights), Vernon Press, 324-384." ;
+                                                                               rdfs:label "Generic Innovation Interoperability"@en .
 
 #################################################################
 #    Annotation properties
 #################################################################
 
-###  http://field33.com/ontologies/VIRTUAL/canonicalPrefix
-field33_virtual:canonicalPrefix rdf:type owl:AnnotationProperty .
+###  http://field33.com/ontologies/REGISTRY/author
+registry:author rdf:type owl:AnnotationProperty .
 
 
-###  http://field33.com/ontologies/VIRTUAL/canonicalPrefixIri
-field33_virtual:canonicalPrefixIri rdf:type owl:AnnotationProperty .
+###  http://field33.com/ontologies/REGISTRY/canonicalPrefix
+registry:canonicalPrefix rdf:type owl:AnnotationProperty .
 
 
-###  http://field33.com/ontologies/VIRTUAL/ontologyFormatVersion
-field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
+###  http://field33.com/ontologies/REGISTRY/category
+registry:category rdf:type owl:AnnotationProperty .
+
+
+###  http://field33.com/ontologies/REGISTRY/keyword
+registry:keyword rdf:type owl:AnnotationProperty .
+
+
+###  http://field33.com/ontologies/REGISTRY/ontologyFormatVersion
+registry:ontologyFormatVersion rdf:type owl:AnnotationProperty .
+
+
+###  http://field33.com/ontologies/REGISTRY/packageName
+registry:packageName rdf:type owl:AnnotationProperty .
+
+
+###  http://field33.com/ontologies/REGISTRY/packageVersion
+registry:packageVersion rdf:type owl:AnnotationProperty .
+
+
+###  http://field33.com/ontologies/REGISTRY/repository
+registry:repository rdf:type owl:AnnotationProperty .
+
+
+###  http://field33.com/ontologies/REGISTRY/shortDescription
+registry:shortDescription rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/elements/1.1/creator
@@ -50,19 +86,19 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/activityProperty
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/activityProperty
 :activityProperty rdf:type owl:ObjectProperty .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/actorProperty
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/actorProperty
 :actorProperty rdf:type owl:ObjectProperty .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/agentProperty
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/agentProperty
 :agentProperty rdf:type owl:ObjectProperty .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/analogTo
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/analogTo
 :analogTo rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf :coreIdeaProperty ;
           owl:inverseOf :oppositTo ;
@@ -71,7 +107,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
           rdfs:label "Analog To"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/belongsTo
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/belongsTo
 :belongsTo rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf :agentProperty ;
            rdfs:domain :Agent ;
@@ -79,28 +115,28 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
            rdfs:label "Belongs To"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/businessProperty
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/businessProperty
 :businessProperty rdf:type owl:ObjectProperty .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/causedBy
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/causedBy
 :causedBy rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf :stateProperty ;
           owl:inverseOf :causes ;
           rdfs:label "Caused By"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/causes
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/causes
 :causes rdf:type owl:ObjectProperty ;
         rdfs:subPropertyOf :stateProperty ;
         rdfs:label "Causes"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/challengeProperty
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/challengeProperty
 :challengeProperty rdf:type owl:ObjectProperty .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/commitedTo
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/commitedTo
 :commitedTo rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf :agentProperty ;
             rdfs:domain :Agent ;
@@ -108,15 +144,15 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
             rdfs:label "Commited To"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/communicationChannelProperty
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/communicationChannelProperty
 :communicationChannelProperty rdf:type owl:ObjectProperty .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/coreIdeaProperty
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/coreIdeaProperty
 :coreIdeaProperty rdf:type owl:ObjectProperty .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/decompositionOf
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/decompositionOf
 :decompositionOf rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf :objectiveProperty ;
                  rdfs:domain :Objective ;
@@ -124,7 +160,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
                  rdfs:label "Decomposition Of"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/dependsOn
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/dependsOn
 :dependsOn rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf :objectiveProperty ;
            rdfs:domain :Objective ;
@@ -132,7 +168,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
            rdfs:label "Depends On"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/designedBy
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/designedBy
 :designedBy rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf :challengeProperty ,
                                :experienceProperty ,
@@ -141,28 +177,28 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
             rdfs:label "Designed By"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/enabledBy
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/enabledBy
 :enabledBy rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf :stateProperty ;
            owl:inverseOf :enables ;
            rdfs:label "Enabled By"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/enables
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/enables
 :enables rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :stateProperty ;
          rdfs:label "Enables"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/experienceProperty
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/experienceProperty
 :experienceProperty rdf:type owl:ObjectProperty .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/featureProperty
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/featureProperty
 :featureProperty rdf:type owl:ObjectProperty .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/followerOf
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/followerOf
 :followerOf rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf :roleProperty ;
             owl:inverseOf :leaderOf ;
@@ -171,31 +207,31 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
             rdfs:label "Follower Of"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/forAction
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/forAction
 :forAction rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf :communicationChannelProperty ;
            rdfs:label "For Action"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/forOperation
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/forOperation
 :forOperation rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :stateProperty ;
               rdfs:label "For Operation"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/forResource
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/forResource
 :forResource rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf :stateProperty ;
              rdfs:label "For Resource"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/forState
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/forState
 :forState rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf :communicationChannelProperty ;
           rdfs:label "For State"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/generalizedRoleOf
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/generalizedRoleOf
 :generalizedRoleOf rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf :roleProperty ;
                    owl:inverseOf :specializedRoleOf ;
@@ -204,7 +240,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
                    rdfs:label "Generalized Role Of"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasActivity
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasActivity
 :hasActivity rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf :organizationProperty ,
                                 :roleProperty ;
@@ -214,7 +250,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
              rdfs:label "Has Activity"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasArchitecture
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasArchitecture
 :hasArchitecture rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf :businessProperty ;
                  rdfs:domain :Business ;
@@ -222,7 +258,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
                  rdfs:label "Has Architecture"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasAuthority
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasAuthority
 :hasAuthority rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :roleProperty ;
               rdfs:domain :Role ;
@@ -230,7 +266,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
               rdfs:label "Has Authority"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasCharacter
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasCharacter
 :hasCharacter rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :featureProperty ,
                                  :operationProperty ,
@@ -239,7 +275,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
               rdfs:label "Has Character"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasCommunicationChannel
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasCommunicationChannel
 :hasCommunicationChannel rdf:type owl:ObjectProperty ;
                          rdfs:subPropertyOf :agentProperty ;
                          rdfs:domain :Agent ;
@@ -247,7 +283,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
                          rdfs:label "Has Communication Channel"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasCompetency
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasCompetency
 :hasCompetency rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf :personaProperty ,
                                   :prototypeProperty ;
@@ -255,7 +291,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
                rdfs:label "Has Competency"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasConstraint
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasConstraint
 :hasConstraint rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf :roleProperty ;
                rdfs:domain :Role ;
@@ -263,7 +299,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
                rdfs:label "Has Constraint"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasCulture
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasCulture
 :hasCulture rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf :organizationProperty ;
             rdfs:domain :Organization ;
@@ -271,7 +307,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
             rdfs:label "Has Culture"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasDesignMethod
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasDesignMethod
 :hasDesignMethod rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf :experienceProperty ;
                  rdfs:domain :Experience ;
@@ -279,7 +315,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
                  rdfs:label "Has Design Method"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasDuration
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasDuration
 :hasDuration rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf :operationProperty ;
              rdfs:domain :Operation ;
@@ -287,7 +323,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
              rdfs:label "Has Duration"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasElaboration
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasElaboration
 :hasElaboration rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf :activityProperty ;
                 owl:inverseOf :isElaborationOf ;
@@ -296,7 +332,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
                 rdfs:label "Has Elaboration"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasEmpowerment
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasEmpowerment
 :hasEmpowerment rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf :communicationChannelProperty ;
                 rdfs:domain :CommunicationChannel ;
@@ -304,7 +340,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
                 rdfs:label "Has Empowerment"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasFeature
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasFeature
 :hasFeature rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf :proposalProperty ;
             rdfs:domain :Proposal ;
@@ -312,7 +348,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
             rdfs:label "Has Feature"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasForm
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasForm
 :hasForm rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :organizationProperty ;
          rdfs:domain :Organization ;
@@ -320,14 +356,14 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
          rdfs:label "Has Form"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasFunction
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasFunction
 :hasFunction rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf :modelProperty ;
              rdfs:range :Function ;
              rdfs:label "Had Function"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasGoal
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasGoal
 :hasGoal rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :operationProperty ;
          rdfs:domain :Operation ;
@@ -335,7 +371,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
          rdfs:label "Has Goal"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasIdeationMethod
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasIdeationMethod
 :hasIdeationMethod rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf :proposalProperty ;
                    rdfs:domain :Proposal ;
@@ -343,14 +379,14 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
                    rdfs:label "Has Ideation Method"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasIteration
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasIteration
 :hasIteration rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :hasStage ;
               rdfs:domain :Stage ;
               rdfs:range :Iteration .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasJTBD
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasJTBD
 :hasJTBD rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :challengeProperty ;
          rdfs:domain :Challenge ;
@@ -358,7 +394,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
          rdfs:label "Has JTBD"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasMember
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasMember
 :hasMember rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf :actorProperty ;
            owl:inverseOf :memberOf ;
@@ -367,7 +403,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
            rdfs:label "Has Member"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasModel
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasModel
 :hasModel rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf :experienceProperty ;
           rdfs:domain :Experience ;
@@ -375,7 +411,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
           rdfs:label "Has Model"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasMotivation
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasMotivation
 :hasMotivation rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf :jtbdProperty ,
                                   :personaProperty ;
@@ -383,14 +419,14 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
                rdfs:label "Has Motivation"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasObject
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasObject
 :hasObject rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf :modelProperty ;
            rdfs:range :Object ;
            rdfs:label "Has Object"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasObjective
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasObjective
 :hasObjective rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :communicationChannelProperty ,
                                  :featureProperty ,
@@ -403,7 +439,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
               rdfs:label "Has Objective"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasOutcome
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasOutcome
 :hasOutcome rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf :operationProperty ,
                                :questionProperty ;
@@ -412,7 +448,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
             rdfs:label "Has Outcome"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasPersona
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasPersona
 :hasPersona rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf :agentProperty ;
             rdfs:domain :Agent ;
@@ -420,7 +456,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
             rdfs:label "Has Persona"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasPerspective
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasPerspective
 :hasPerspective rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf :proposalProperty ;
                 rdfs:domain :Proposal ;
@@ -428,7 +464,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
                 rdfs:label "Has Perspective"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasPhase
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasPhase
 :hasPhase rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf :lifecycleProperty ;
           rdfs:domain :Lifecycle ;
@@ -436,7 +472,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
           rdfs:label "Has Phase"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasPhilosophy
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasPhilosophy
 :hasPhilosophy rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf :businessProperty ;
                rdfs:domain :Business ;
@@ -444,7 +480,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
                rdfs:label "Has Philosophy"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasPolicy
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasPolicy
 :hasPolicy rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf :organizationProperty ;
            rdfs:domain :Organization ;
@@ -452,7 +488,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
            rdfs:label "Has Policy"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasProblemIndicator
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasProblemIndicator
 :hasProblemIndicator rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf :challengeProperty ;
                      rdfs:domain :Challenge ;
@@ -460,7 +496,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
                      rdfs:label "Has Problem Indicator"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasProcess
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasProcess
 :hasProcess rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf :activityProperty ;
             rdfs:domain :Activity ;
@@ -468,7 +504,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
             rdfs:label "Has Process"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasProfile
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasProfile
 :hasProfile rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf :agentProperty ,
                                :featureProperty ,
@@ -479,7 +515,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
             rdfs:label "Has Profile"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasPrototype
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasPrototype
 :hasPrototype rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :experienceProperty ;
               rdfs:domain :Experience ;
@@ -487,7 +523,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
               rdfs:label "Has Prototype"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasPrototypeIndicator
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasPrototypeIndicator
 :hasPrototypeIndicator rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf :experienceProperty ;
                        rdfs:domain :Experience ;
@@ -495,7 +531,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
                        rdfs:label "Has Prototype Indicator"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasQuestion
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasQuestion
 :hasQuestion rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf :challengeProperty ;
              rdfs:domain :Challenge ;
@@ -503,7 +539,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
              rdfs:label "Has Question"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasReceivingAgent
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasReceivingAgent
 :hasReceivingAgent rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf :communicationChannelProperty ;
                    rdfs:domain :CommunicationChannel ;
@@ -511,7 +547,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
                    rdfs:label "Has Receiving Agent"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasReceivingRole
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasReceivingRole
 :hasReceivingRole rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf :communicationChannelProperty ;
                   rdfs:domain :CommunicationChannel ;
@@ -519,7 +555,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
                   rdfs:label "Has Receiving Role"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasResearchMethod
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasResearchMethod
 :hasResearchMethod rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf :challengeProperty ;
                    rdfs:domain :Challenge ;
@@ -527,14 +563,14 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
                    rdfs:label "Has Research Method"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasResource
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasResource
 :hasResource rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf :roleProperty ;
              rdfs:range :Resource ;
              rdfs:label "Has Resource"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasRole
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasRole
 :hasRole rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :communicationChannelProperty ;
          owl:inverseOf :roleOf ;
@@ -543,7 +579,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
          rdfs:label "Has Role"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasRootCause
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasRootCause
 :hasRootCause rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :challengeProperty ;
               rdfs:domain :Challenge ;
@@ -551,7 +587,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
               rdfs:label "Has Root Cause"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasRootConcept
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasRootConcept
 :hasRootConcept rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf :proposalProperty ;
                 rdfs:domain :Proposal ;
@@ -559,7 +595,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
                 rdfs:label "Has Root Concept"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasRootPrototype
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasRootPrototype
 :hasRootPrototype rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf :experienceProperty ;
                   rdfs:domain :Experience ;
@@ -567,7 +603,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
                   rdfs:label "Has Root Prototype"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasSector
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasSector
 :hasSector rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf :marketProperty ;
            rdfs:domain :Market ;
@@ -575,7 +611,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
            rdfs:label "Has Sector"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasSendingAgent
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasSendingAgent
 :hasSendingAgent rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf :communicationChannelProperty ;
                  rdfs:domain :CommunicationChannel ;
@@ -583,7 +619,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
                  rdfs:label "Has Sending Agent"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasSendingRole
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasSendingRole
 :hasSendingRole rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf :communicationChannelProperty ;
                 rdfs:domain :CommunicationChannel ;
@@ -591,14 +627,14 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
                 rdfs:label "Has Sending Role"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasSituation
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasSituation
 :hasSituation rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :perspectiveProperty ;
               rdfs:range :Situation ;
               rdfs:label "Has Situation"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasSolutionIndicator
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasSolutionIndicator
 :hasSolutionIndicator rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf :proposalProperty ;
                       rdfs:domain :Proposal ;
@@ -606,7 +642,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
                       rdfs:label "Has Solution Indicator"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasStage
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasStage
 :hasStage rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf :hasPhase ;
           rdfs:domain :Phase ;
@@ -614,7 +650,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
           rdfs:label "Has Stage"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasStatement
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasStatement
 :hasStatement rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :challengeProperty ,
                                  :proposalProperty ;
@@ -622,7 +658,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
               rdfs:label "Has Statement"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasStatus
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasStatus
 :hasStatus rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf :operationProperty ;
            rdfs:domain :Operation ;
@@ -630,7 +666,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
            rdfs:label "Has Status"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasStructure
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasStructure
 :hasStructure rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :organizationProperty ;
               rdfs:domain :Organization ;
@@ -638,21 +674,21 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
               rdfs:label "Has Structure"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasSubState
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasSubState
 :hasSubState rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf :stateProperty ;
              owl:inverseOf :subStateOf ;
              rdfs:label "Has Sub State"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasSubject
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasSubject
 :hasSubject rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf :modelProperty ;
             rdfs:range :Subject ;
             rdfs:label "Has Subject"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasSupervisee
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasSupervisee
 :hasSupervisee rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf :communicationChannelProperty ;
                owl:inverseOf :hasSupervisor ;
@@ -661,7 +697,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
                rdfs:label "Has Supervisee"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasSupervisor
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasSupervisor
 :hasSupervisor rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf :communicationChannelProperty ;
                rdfs:domain :CommEmpower ;
@@ -669,7 +705,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
                rdfs:label "Has Supervisor"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/hasVisibility
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/hasVisibility
 :hasVisibility rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf :marketProperty ;
                rdfs:domain :Market ;
@@ -677,7 +713,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
                rdfs:label "Has Visibility"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/identifyAssistantStaff
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/identifyAssistantStaff
 :identifyAssistantStaff rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf :experienceProperty ;
                         rdfs:domain :Experience ;
@@ -685,7 +721,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
                         rdfs:label "Identify Assistant Staff"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/identifyCompetitor
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/identifyCompetitor
 :identifyCompetitor rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf :proposalProperty ;
                     rdfs:domain :Proposal ;
@@ -693,7 +729,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
                     rdfs:label "Identify Competitor"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/identifyCustomer
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/identifyCustomer
 :identifyCustomer rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf :challengeProperty ;
                   rdfs:domain :Challenge ;
@@ -701,7 +737,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
                   rdfs:label "Identify Customer"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/isElaborationOf
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/isElaborationOf
 :isElaborationOf rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf :activityProperty ;
                  rdfs:domain :Operation ;
@@ -709,11 +745,11 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
                  rdfs:label "Is Elaboration Of"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/jtbdProperty
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/jtbdProperty
 :jtbdProperty rdf:type owl:ObjectProperty .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/leaderOf
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/leaderOf
 :leaderOf rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf :roleProperty ;
           rdfs:domain :Role ;
@@ -721,15 +757,15 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
           rdfs:label "Leader Of"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/lifecycleProperty
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/lifecycleProperty
 :lifecycleProperty rdf:type owl:ObjectProperty .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/marketProperty
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/marketProperty
 :marketProperty rdf:type owl:ObjectProperty .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/memberOf
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/memberOf
 :memberOf rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf :actorProperty ;
           rdfs:domain :Actor ;
@@ -737,11 +773,11 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
           rdfs:label "Member Of"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/modelProperty
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/modelProperty
 :modelProperty rdf:type owl:ObjectProperty .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/objectiveOf
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/objectiveOf
 :objectiveOf rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf :roleProperty ;
              rdfs:domain :Objective ;
@@ -749,11 +785,11 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
              rdfs:label "Objective Of"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/objectiveProperty
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/objectiveProperty
 :objectiveProperty rdf:type owl:ObjectProperty .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/operationEmpower
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/operationEmpower
 :operationEmpower rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf :agentProperty ;
                   rdfs:domain :Agent ;
@@ -761,11 +797,11 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
                   rdfs:label "Operation Empower"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/operationProperty
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/operationProperty
 :operationProperty rdf:type owl:ObjectProperty .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/oppositTo
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/oppositTo
 :oppositTo rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf :coreIdeaProperty ;
            rdfs:domain :CoreIdea ;
@@ -773,19 +809,19 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
            rdfs:label "Opposit To"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/organizationProperty
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/organizationProperty
 :organizationProperty rdf:type owl:ObjectProperty .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/personaProperty
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/personaProperty
 :personaProperty rdf:type owl:ObjectProperty .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/perspectiveProperty
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/perspectiveProperty
 :perspectiveProperty rdf:type owl:ObjectProperty .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/playsRole
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/playsRole
 :playsRole rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf :agentProperty ;
            rdfs:domain :Agent ;
@@ -793,19 +829,19 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
            rdfs:label "Plays Role"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/proposalProperty
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/proposalProperty
 :proposalProperty rdf:type owl:ObjectProperty .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/prototypeProperty
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/prototypeProperty
 :prototypeProperty rdf:type owl:ObjectProperty .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/questionProperty
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/questionProperty
 :questionProperty rdf:type owl:ObjectProperty .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/relatedTo
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/relatedTo
 :relatedTo rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf :coreIdeaProperty ;
            rdfs:domain :CoreIdea ;
@@ -813,7 +849,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
            rdfs:label "Related To"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/requiresCompetency
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/requiresCompetency
 :requiresCompetency rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf :roleProperty ;
                     rdfs:domain :Role ;
@@ -821,7 +857,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
                     rdfs:label "Requires Competency"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/roleOf
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/roleOf
 :roleOf rdf:type owl:ObjectProperty ;
         rdfs:subPropertyOf :communicationChannelProperty ;
         rdfs:domain :Role ;
@@ -829,25 +865,25 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
         rdfs:label "Role Of"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/roleProperty
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/roleProperty
 :roleProperty rdf:type owl:ObjectProperty .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/runsActivity
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/runsActivity
 :runsActivity rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :hasStage ;
               rdfs:domain :Stage ;
               rdfs:range :Activity .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/runsOperation
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/runsOperation
 :runsOperation rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf :hasIteration ;
                rdfs:domain :Iteration ;
                rdfs:range :Operation .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/runsProcess
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/runsProcess
 :runsProcess rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf :hasPhase ;
              rdfs:domain :Phase ;
@@ -855,7 +891,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
              rdfs:label "Runs Process"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/satisfiedBy
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/satisfiedBy
 :satisfiedBy rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf :objectiveProperty ;
              rdfs:domain :Objective ;
@@ -863,7 +899,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
              rdfs:label "Satisfied By"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/specializedRoleOf
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/specializedRoleOf
 :specializedRoleOf rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf :roleProperty ;
                    rdfs:domain :Role ;
@@ -871,7 +907,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
                    rdfs:label "Specialized Role Of"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/stateEmpower
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/stateEmpower
 :stateEmpower rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :agentProperty ;
               rdfs:domain :Agent ;
@@ -879,17 +915,17 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
               rdfs:label "State Empower"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/stateProperty
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/stateProperty
 :stateProperty rdf:type owl:ObjectProperty .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/subStateOf
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/subStateOf
 :subStateOf rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf :stateProperty ;
             rdfs:label "Sub State Of"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/triggerExperience
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/triggerExperience
 :triggerExperience rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf :proposalProperty ;
                    rdfs:domain :Proposal ;
@@ -897,7 +933,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
                    rdfs:label "Trigger Experience"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/triggerProposal
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/triggerProposal
 :triggerProposal rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf :challengeProperty ;
                  rdfs:domain :Challenge ;
@@ -909,25 +945,25 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
 #    Classes
 #################################################################
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Ability
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Ability
 :Ability rdf:type owl:Class ;
          rdfs:subClassOf :Competency ;
          rdfs:label "Ability"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Action
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Action
 :Action rdf:type owl:Class ;
         rdfs:subClassOf :Authority ;
         rdfs:label "Action"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Activity
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Activity
 :Activity rdf:type owl:Class ;
           rdfs:subClassOf :Actor ;
           rdfs:label "Activity"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Actor
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Actor
 :Actor rdf:type owl:Class ;
        rdfs:subClassOf [ rdf:type owl:Restriction ;
                          owl:onProperty :hasProfile ;
@@ -936,72 +972,72 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
        rdfs:label "Actor"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Advantage
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Advantage
 :Advantage rdf:type owl:Class ;
            rdfs:subClassOf :Profile ;
            rdfs:label "Advantage"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Agent
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Agent
 :Agent rdf:type owl:Class ;
        rdfs:subClassOf :Actor ,
                        :Capability ;
        rdfs:label "Agent"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/AnalogyBased
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/AnalogyBased
 :AnalogyBased rdf:type owl:Class ;
               rdfs:subClassOf :IdeationMethod ;
               rdfs:label "Analogy Based"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Architecture
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Architecture
 :Architecture rdf:type owl:Class ;
               rdfs:subClassOf :Context .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/AssistantStaff
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/AssistantStaff
 :AssistantStaff rdf:type owl:Class ;
                 rdfs:subClassOf :Agent ;
                 rdfs:label "Assistant Staff"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Associate
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Associate
 :Associate rdf:type owl:Class ;
            rdfs:subClassOf :Agent ;
            rdfs:label "Associate"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Authority
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Authority
 :Authority rdf:type owl:Class ;
            rdfs:subClassOf :Actor ;
            rdfs:label "Authority"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Behavior
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Behavior
 :Behavior rdf:type owl:Class ;
           rdfs:subClassOf :Character ;
           rdfs:label "Behaviour"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Brainstorming
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Brainstorming
 :Brainstorming rdf:type owl:Class ;
                rdfs:subClassOf :IdeationMethod ;
                rdfs:label "Brainstorming"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Business
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Business
 :Business rdf:type owl:Class ;
           rdfs:subClassOf :Scope .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Capability
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Capability
 :Capability rdf:type owl:Class ;
             rdfs:subClassOf :Context ;
             rdfs:label "Capability"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Challenge
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Challenge
 :Challenge rdf:type owl:Class ;
            rdfs:subClassOf :CoreIdea ,
                            [ rdf:type owl:Restriction ;
@@ -1015,31 +1051,31 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
            rdfs:label "Challenge"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Character
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Character
 :Character rdf:type owl:Class ;
            rdfs:subClassOf :Actor ;
            rdfs:label "Character"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Circumstance
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Circumstance
 :Circumstance rdf:type owl:Class ;
               rdfs:subClassOf :Context ;
               rdfs:label "Circumstance"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Cognition
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Cognition
 :Cognition rdf:type owl:Class ;
            rdfs:subClassOf :Character ;
            rdfs:label "Cognition"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Collaboration
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Collaboration
 :Collaboration rdf:type owl:Class ;
                rdfs:subClassOf :Process ;
                rdfs:label "Collaboration"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/CommEmpower
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/CommEmpower
 :CommEmpower rdf:type owl:Class ;
              rdfs:subClassOf :CommunicationChannel ,
                              [ rdf:type owl:Restriction ;
@@ -1057,13 +1093,13 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
              rdfs:label "Comm Empower"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Commerce
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Commerce
 :Commerce rdf:type owl:Class ;
           rdfs:subClassOf :Sector ;
           rdfs:label "Commerce"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/CommunicationChannel
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/CommunicationChannel
 :CommunicationChannel rdf:type owl:Class ;
                       rdfs:subClassOf :Actor ,
                                       :Capability ,
@@ -1074,143 +1110,143 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
                       rdfs:label "Communication Channel"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Community
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Community
 :Community rdf:type owl:Class ;
            rdfs:subClassOf :Scale ;
            rdfs:label "Community"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Competency
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Competency
 :Competency rdf:type owl:Class ;
             rdfs:subClassOf :Actor ;
             rdfs:label "Competency"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Competitor
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Competitor
 :Competitor rdf:type owl:Class ;
             rdfs:subClassOf :Agent ;
             rdfs:label "Competitor"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Condition
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Condition
 :Condition rdf:type owl:Class ;
            rdfs:subClassOf :Circumstance ;
            rdfs:label "Condition"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Constraint
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Constraint
 :Constraint rdf:type owl:Class ;
             rdfs:subClassOf :Circumstance ;
             rdfs:label "Constraint"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Context
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Context
 :Context rdf:type owl:Class ;
          rdfs:label "Context"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Contribution
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Contribution
 :Contribution rdf:type owl:Class ;
               rdfs:subClassOf :Profile ;
               rdfs:label "Contribution"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Contributor
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Contributor
 :Contributor rdf:type owl:Class ;
              rdfs:subClassOf :Agent ;
              rdfs:label "Contributor"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Controversy
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Controversy
 :Controversy rdf:type owl:Class ;
              rdfs:subClassOf :Circumstance ;
              rdfs:label "Controversy"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Convenience
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Convenience
 :Convenience rdf:type owl:Class ;
              rdfs:subClassOf :MIPrototype ;
              rdfs:label "Convenience"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/CoreIdea
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/CoreIdea
 :CoreIdea rdf:type owl:Class ;
           rdfs:label "CoreIdea"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Creativity
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Creativity
 :Creativity rdf:type owl:Class ;
             rdfs:subClassOf :Process ;
             rdfs:label "Creativity"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Culture
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Culture
 :Culture rdf:type owl:Class ;
          rdfs:subClassOf :Context ;
          rdfs:label "Culture"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Customer
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Customer
 :Customer rdf:type owl:Class ;
           rdfs:subClassOf :Agent ;
           rdfs:label "Customer"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Data
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Data
 :Data rdf:type owl:Class ;
       rdfs:subClassOf :Resource ;
       rdfs:label "Data"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/DesignMethod
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/DesignMethod
 :DesignMethod rdf:type owl:Class ;
               rdfs:subClassOf :CoreIdea ;
               rdfs:label "Design Method"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Desirability
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Desirability
 :Desirability rdf:type owl:Class ;
               rdfs:subClassOf :MIProposal ;
               rdfs:label "Desirability"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Duration
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Duration
 :Duration rdf:type owl:Class ;
           rdfs:subClassOf :Resource ;
           rdfs:label "Duration"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/EaseOfUse
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/EaseOfUse
 :EaseOfUse rdf:type owl:Class ;
            rdfs:subClassOf :MIPrototype ;
            rdfs:label "Ease Of Use"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Emergence
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Emergence
 :Emergence rdf:type owl:Class ;
            rdfs:subClassOf :Phase ;
            rdfs:label "Emergence"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Empowerment
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Empowerment
 :Empowerment rdf:type owl:Class ;
              rdfs:subClassOf :Authority ;
              rdfs:label "Empowerment"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Enterprise
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Enterprise
 :Enterprise rdf:type owl:Class ;
             rdfs:subClassOf :Form ;
             rdfs:label "Enterprise"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Entrepreneur
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Entrepreneur
 :Entrepreneur rdf:type owl:Class ;
               rdfs:subClassOf :Agent ;
               rdfs:label "Entrepreneur"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Experience
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Experience
 :Experience rdf:type owl:Class ;
             rdfs:subClassOf :CoreIdea ,
                             [ rdf:type owl:Restriction ;
@@ -1220,19 +1256,19 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
             rdfs:label "Experience"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Fear
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Fear
 :Fear rdf:type owl:Class ;
       rdfs:subClassOf :Motivation ;
       rdfs:label "Fear"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Feasibility
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Feasibility
 :Feasibility rdf:type owl:Class ;
              rdfs:subClassOf :MIProposal ;
              rdfs:label "Feasibility"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Feature
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Feature
 :Feature rdf:type owl:Class ;
          rdfs:subClassOf :CoreIdea ,
                          [ rdf:type owl:Restriction ;
@@ -1250,108 +1286,108 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
          rdfs:label "Feature"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Form
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Form
 :Form rdf:type owl:Class ;
       rdfs:subClassOf :Context ;
       rdfs:label "Form"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Frequency
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Frequency
 :Frequency rdf:type owl:Class ;
            rdfs:subClassOf :MIChallenge ;
            rdfs:label "Frequency"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Function
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Function
 :Function rdf:type owl:Class ;
           rdfs:subClassOf :CoreIdea ;
           rdfs:label "Function"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Fund
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Fund
 :Fund rdf:type owl:Class ;
       rdfs:subClassOf :Grant ;
       rdfs:label "Fund"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Gate
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Gate
 :Gate rdf:type owl:Class ;
       rdfs:subClassOf :Iteration ;
       rdfs:label "Gate"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Goal
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Goal
 :Goal rdf:type owl:Class ;
       rdfs:subClassOf :Objective ;
       rdfs:label "Goal"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Governmental
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Governmental
 :Governmental rdf:type owl:Class ;
               rdfs:subClassOf :Form ;
               rdfs:label "Governmental"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Grant
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Grant
 :Grant rdf:type owl:Class ;
        rdfs:subClassOf :Resource .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Growing
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Growing
 :Growing rdf:type owl:Class ;
          rdfs:subClassOf :MIChallenge ;
          rdfs:label "Growing"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Growth
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Growth
 :Growth rdf:type owl:Class ;
         rdfs:subClassOf :Phase ;
         rdfs:label "Growth"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/IdeationMethod
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/IdeationMethod
 :IdeationMethod rdf:type owl:Class ;
                 rdfs:subClassOf :CoreIdea ;
                 rdfs:label "Ideation Method"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Impact
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Impact
 :Impact rdf:type owl:Class ;
         rdfs:subClassOf :Objective ;
         rdfs:label "Impact"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/ImpactDriven
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/ImpactDriven
 :ImpactDriven rdf:type owl:Class ;
               rdfs:subClassOf :ResearchMethod ;
               rdfs:label "Impact Driven"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Incentive
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Incentive
 :Incentive rdf:type owl:Class ;
            rdfs:subClassOf :Grant ;
            rdfs:label "Incentive"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Individual
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Individual
 :Individual rdf:type owl:Class ;
             rdfs:subClassOf :Scale ;
             rdfs:label "Individual"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Industry
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Industry
 :Industry rdf:type owl:Class ;
           rdfs:subClassOf :Sector ;
           rdfs:label "Industry"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Inhibitor
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Inhibitor
 :Inhibitor rdf:type owl:Class ;
            rdfs:subClassOf :Circumstance ;
            rdfs:label "Inhibitor"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/InitialState
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/InitialState
 :InitialState rdf:type owl:Class ;
               rdfs:subClassOf :State ,
                               [ rdf:type owl:Restriction ;
@@ -1365,25 +1401,25 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
               rdfs:label "Initial State"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Integrity
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Integrity
 :Integrity rdf:type owl:Class ;
            rdfs:subClassOf :MIProposal ;
            rdfs:label "Integrity"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Interest
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Interest
 :Interest rdf:type owl:Class ;
           rdfs:subClassOf :Objective ;
           rdfs:label "Interest"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Iteration
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Iteration
 :Iteration rdf:type owl:Class ;
            rdfs:subClassOf :CoreIdea ;
            rdfs:label "Iteration"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/JTBD
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/JTBD
 :JTBD rdf:type owl:Class ;
       rdfs:subClassOf :CoreIdea ,
                       [ rdf:type owl:Restriction ;
@@ -1401,97 +1437,97 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
       rdfs:label "Jobs To Be Done"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Judgment
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Judgment
 :Judgment rdf:type owl:Class ;
           rdfs:subClassOf :Process ;
           rdfs:label "Judgment"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Knowledge
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Knowledge
 :Knowledge rdf:type owl:Class ;
            rdfs:subClassOf :Competency ;
            rdfs:label "Knowledge"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Leap
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Leap
 :Leap rdf:type owl:Class ;
       rdfs:subClassOf :Motivation ;
       rdfs:label "Leap"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Learning
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Learning
 :Learning rdf:type owl:Class ;
           rdfs:subClassOf :Process ;
           rdfs:label "Learning"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Lifecycle
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Lifecycle
 :Lifecycle rdf:type owl:Class ;
            rdfs:subClassOf :CoreIdea ;
            rdfs:label "Lifecycle"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/LinkageDriven
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/LinkageDriven
 :LinkageDriven rdf:type owl:Class ;
                rdfs:subClassOf :ResearchMethod ;
                rdfs:label "Linkage Driven"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/LowCost
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/LowCost
 :LowCost rdf:type owl:Class ;
          rdfs:subClassOf :MIPrototype ;
          rdfs:label "Low Cost"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/MIChallenge
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/MIChallenge
 :MIChallenge rdf:type owl:Class ;
              rdfs:subClassOf :CoreIdea ;
              rdfs:label "MI Challenge"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/MIProposal
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/MIProposal
 :MIProposal rdf:type owl:Class ;
             rdfs:subClassOf :CoreIdea ;
             rdfs:label "MI Proposal"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/MIPrototype
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/MIPrototype
 :MIPrototype rdf:type owl:Class ;
              rdfs:subClassOf :CoreIdea ;
              rdfs:label "MI Prototype"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/MVP
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/MVP
 :MVP rdf:type owl:Class ;
      rdfs:subClassOf :DesignMethod ;
      rdfs:label "MVP"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Mandatory
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Mandatory
 :Mandatory rdf:type owl:Class ;
            rdfs:subClassOf :MIChallenge ;
            rdfs:label "Mandatory"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Market
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Market
 :Market rdf:type owl:Class ;
         rdfs:subClassOf :Scope ;
         rdfs:label "Market"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Maturity
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Maturity
 :Maturity rdf:type owl:Class ;
           rdfs:subClassOf :Phase ;
           rdfs:label "Maturity"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Mean
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Mean
 :Mean rdf:type owl:Class ;
       rdfs:subClassOf :Objective ;
       rdfs:label "Mean"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Model
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Model
 :Model rdf:type owl:Class ;
        rdfs:subClassOf :CoreIdea ,
                        [ rdf:type owl:Restriction ;
@@ -1509,24 +1545,24 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
        rdfs:label "Model"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Motivation
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Motivation
 :Motivation rdf:type owl:Class ;
             rdfs:subClassOf :Actor ;
             rdfs:label "Motivation"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Need
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Need
 :Need rdf:type owl:Class ;
       rdfs:subClassOf :Motivation .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Network
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Network
 :Network rdf:type owl:Class ;
          rdfs:subClassOf :Scale ;
          rdfs:label "Network"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/NextState
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/NextState
 :NextState rdf:type owl:Class ;
            rdfs:subClassOf :State ,
                            [ rdf:type owl:Restriction ;
@@ -1536,25 +1572,25 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
            rdfs:label "Next State"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/NonProfit
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/NonProfit
 :NonProfit rdf:type owl:Class ;
            rdfs:subClassOf :Form ;
            rdfs:label "Non-Profit"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Object
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Object
 :Object rdf:type owl:Class ;
         rdfs:subClassOf :CoreIdea ;
         rdfs:label "Object"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Objective
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Objective
 :Objective rdf:type owl:Class ;
            rdfs:subClassOf :Actor ;
            rdfs:label "Objective"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/OperaEmpower
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/OperaEmpower
 :OperaEmpower rdf:type owl:Class ;
               rdfs:subClassOf :Empowerment ,
                               [ rdf:type owl:Restriction ;
@@ -1573,7 +1609,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
               rdfs:label "Opera Empower"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Operation
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Operation
 :Operation rdf:type owl:Class ;
            rdfs:subClassOf :Actor ,
                            :CoreIdea ,
@@ -1596,43 +1632,43 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
            rdfs:label "Operation"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/OppositeBased
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/OppositeBased
 :OppositeBased rdf:type owl:Class ;
                rdfs:subClassOf :IdeationMethod ;
                rdfs:label "Opposite Based"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Organization
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Organization
 :Organization rdf:type owl:Class ;
               rdfs:subClassOf :Scope ;
               rdfs:label "Organization"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Outcome
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Outcome
 :Outcome rdf:type owl:Class ;
          rdfs:subClassOf :Actor ;
          rdfs:label "Outcome"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/OutcomeDriven
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/OutcomeDriven
 :OutcomeDriven rdf:type owl:Class ;
                rdfs:subClassOf :ResearchMethod ;
                rdfs:label "Outcome Driven"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Passion
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Passion
 :Passion rdf:type owl:Class ;
          rdfs:subClassOf :Competency ;
          rdfs:label "Passion"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Performance
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Performance
 :Performance rdf:type owl:Class ;
              rdfs:subClassOf :MIPrototype ;
              rdfs:label "Performance"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Persona
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Persona
 :Persona rdf:type owl:Class ;
          rdfs:subClassOf :Actor ,
                          [ rdf:type owl:Restriction ;
@@ -1654,7 +1690,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
          rdfs:label "Persona"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Perspective
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Perspective
 :Perspective rdf:type owl:Class ;
              rdfs:subClassOf :Model ,
                              [ rdf:type owl:Restriction ;
@@ -1664,55 +1700,55 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
              rdfs:label "Perspective"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Phase
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Phase
 :Phase rdf:type owl:Class ;
        rdfs:subClassOf :CoreIdea ;
        rdfs:label "Phase"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Philosophy
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Philosophy
 :Philosophy rdf:type owl:Class ;
             rdfs:subClassOf :Context ;
             rdfs:label "Philosophy"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Physical
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Physical
 :Physical rdf:type owl:Class ;
           rdfs:subClassOf :Visibility ;
           rdfs:label "Physical"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Policy
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Policy
 :Policy rdf:type owl:Class ;
         rdfs:subClassOf :Context ;
         rdfs:label "Policy"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Potential
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Potential
 :Potential rdf:type owl:Class ;
            rdfs:subClassOf :MIChallenge ;
            rdfs:label "Potential"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Priority
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Priority
 :Priority rdf:type owl:Class ;
           rdfs:subClassOf :Character ;
           rdfs:label "Priority"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Process
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Process
 :Process rdf:type owl:Class ;
          rdfs:subClassOf :Actor ;
          rdfs:label "Process"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Profile
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Profile
 :Profile rdf:type owl:Class ;
          rdfs:subClassOf :Actor ;
          rdfs:label "Profile"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Proposal
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Proposal
 :Proposal rdf:type owl:Class ;
           rdfs:subClassOf :CoreIdea ,
                           [ rdf:type owl:Restriction ;
@@ -1726,7 +1762,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
           rdfs:label "Proposal"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Prototype
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Prototype
 :Prototype rdf:type owl:Class ;
            rdfs:subClassOf :CoreIdea ,
                            [ rdf:type owl:Restriction ;
@@ -1744,13 +1780,13 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
            rdfs:label "Prototype"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Qualification
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Qualification
 :Qualification rdf:type owl:Class ;
                rdfs:subClassOf :Profile ;
                rdfs:label "Qualification"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Question
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Question
 :Question rdf:type owl:Class ;
           rdfs:subClassOf :Perspective ,
                           [ rdf:type owl:Restriction ;
@@ -1760,25 +1796,25 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
           rdfs:label "Question"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/ResearchMethod
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/ResearchMethod
 :ResearchMethod rdf:type owl:Class ;
                 rdfs:subClassOf :CoreIdea ;
                 rdfs:label "Research Method"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Researcher
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Researcher
 :Researcher rdf:type owl:Class ;
             rdfs:subClassOf :Agent ;
             rdfs:label "Researcher"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Resource
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Resource
 :Resource rdf:type owl:Class ;
           rdfs:subClassOf :Capability ;
           rdfs:label "Resource"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/ResrcEmpower
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/ResrcEmpower
 :ResrcEmpower rdf:type owl:Class ;
               rdfs:subClassOf :Empowerment ,
                               [ rdf:type owl:Restriction ;
@@ -1796,13 +1832,13 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
               rdfs:label "Resrc Empower"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Reward
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Reward
 :Reward rdf:type owl:Class ;
         rdfs:subClassOf :Grant ;
         rdfs:label "Reward"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Role
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Role
 :Role rdf:type owl:Class ;
       rdfs:subClassOf :Actor ,
                       [ rdf:type owl:Restriction ;
@@ -1816,79 +1852,79 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
       rdfs:label "Role"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/RootCause
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/RootCause
 :RootCause rdf:type owl:Class ;
            rdfs:subClassOf :CoreIdea ;
            rdfs:label "Root Cause"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/RootConcept
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/RootConcept
 :RootConcept rdf:type owl:Class ;
              rdfs:subClassOf :CoreIdea ;
              rdfs:label "Root Concept"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/RootPrototype
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/RootPrototype
 :RootPrototype rdf:type owl:Class ;
                rdfs:subClassOf :CoreIdea ;
                rdfs:label "Root Prototype"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Scale
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Scale
 :Scale rdf:type owl:Class ;
        rdfs:subClassOf :Context ;
        rdfs:label "Scale"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Scenario
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Scenario
 :Scenario rdf:type owl:Class ;
           rdfs:subClassOf :DesignMethod ;
           rdfs:label "Scenario"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Scope
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Scope
 :Scope rdf:type owl:Class ;
        rdfs:subClassOf :Context ;
        rdfs:label "Scope"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Sector
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Sector
 :Sector rdf:type owl:Class ;
         rdfs:subClassOf :Context ;
         rdfs:label "Sector"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Service
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Service
 :Service rdf:type owl:Class ;
          rdfs:subClassOf :Resource ;
          rdfs:label "Service"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Simulation
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Simulation
 :Simulation rdf:type owl:Class ;
             rdfs:subClassOf :DesignMethod ;
             rdfs:label "Simulation"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Situation
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Situation
 :Situation rdf:type owl:Class ;
            rdfs:subClassOf :Context ;
            rdfs:label "Situation"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Skill
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Skill
 :Skill rdf:type owl:Class ;
        rdfs:subClassOf :Competency ;
        rdfs:label "Skill"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Stage
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Stage
 :Stage rdf:type owl:Class ;
        rdfs:subClassOf :CoreIdea ;
        rdfs:label "Stage"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/State
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/State
 :State rdf:type owl:Class ;
        rdfs:subClassOf :Actor ,
                        [ rdf:type owl:Restriction ;
@@ -1902,7 +1938,7 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
        rdfs:label "State"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/StateEmpower
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/StateEmpower
 :StateEmpower rdf:type owl:Class ;
               rdfs:subClassOf :Empowerment ,
                               [ rdf:type owl:Restriction ;
@@ -1923,49 +1959,49 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
               rdfs:label "State Empower"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Statement
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Statement
 :Statement rdf:type owl:Class ;
            rdfs:subClassOf :CoreIdea ;
            rdfs:label "Statement"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Status
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Status
 :Status rdf:type owl:Class ;
         rdfs:subClassOf :Actor ;
         rdfs:label "Status"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Story
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Story
 :Story rdf:type owl:Class ;
        rdfs:subClassOf :Profile ;
        rdfs:label "Story"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Structure
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Structure
 :Structure rdf:type owl:Class ;
            rdfs:subClassOf :Context ;
            rdfs:label "Structure"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Subject
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Subject
 :Subject rdf:type owl:Class ;
          rdfs:subClassOf :CoreIdea ;
          rdfs:label "Subject"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Team
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Team
 :Team rdf:type owl:Class ;
       rdfs:subClassOf :Scale ;
       rdfs:label "Team"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Technology
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Technology
 :Technology rdf:type owl:Class ;
             rdfs:subClassOf :Resource ;
             rdfs:label "Technology"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/TerminalState
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/TerminalState
 :TerminalState rdf:type owl:Class ;
                rdfs:subClassOf :State ,
                                [ rdf:type owl:Restriction ;
@@ -1979,61 +2015,61 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
                rdfs:label "Terminal State"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Trigger
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Trigger
 :Trigger rdf:type owl:Class ;
          rdfs:subClassOf :CoreIdea ;
          rdfs:label "Trigger"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Unit
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Unit
 :Unit rdf:type owl:Class ;
       rdfs:subClassOf :Scale ;
       rdfs:label "Unit"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Urgency
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Urgency
 :Urgency rdf:type owl:Class ;
          rdfs:subClassOf :MIChallenge ;
          rdfs:label "Urgency"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Usability
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Usability
 :Usability rdf:type owl:Class ;
            rdfs:subClassOf :MIProposal ;
            rdfs:label "Usability"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Utility
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Utility
 :Utility rdf:type owl:Class ;
          rdfs:subClassOf :MIProposal ;
          rdfs:label "Utility"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Valuation
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Valuation
 :Valuation rdf:type owl:Class ;
            rdfs:subClassOf :MIChallenge ;
            rdfs:label "Valuation"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Viability
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Viability
 :Viability rdf:type owl:Class ;
            rdfs:subClassOf :MIProposal ;
            rdfs:label "Viability"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Virtual
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Virtual
 :Virtual rdf:type owl:Class ;
          rdfs:subClassOf :Visibility ;
          rdfs:label "Virtual"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Visibility
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Visibility
 :Visibility rdf:type owl:Class ;
             rdfs:subClassOf :Context ;
             rdfs:label "Visibility"@en .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Will
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Will
 :Will rdf:type owl:Class ;
       rdfs:subClassOf :Competency ;
       rdfs:label "Will"@en .
@@ -2043,297 +2079,297 @@ field33_virtual:ontologyFormatVersion rdf:type owl:AnnotationProperty .
 #    Individuals
 #################################################################
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Achievement
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Achievement
 :Achievement rdf:type owl:NamedIndividual ,
                       :Contribution .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Activate
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Activate
 :Activate rdf:type owl:NamedIndividual ,
                    :Action .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Activation
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Activation
 :Activation rdf:type owl:NamedIndividual ,
                      :Operation .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Alliant
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Alliant
 :Alliant rdf:type owl:NamedIndividual ,
                   :Competitor .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Architecture
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Architecture
 :Architecture rdf:type owl:NamedIndividual ,
                        :Qualification .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Art
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Art
 :Art rdf:type owl:NamedIndividual ,
               :Qualification .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Business
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Business
 :Business rdf:type owl:NamedIndividual ,
                    :Qualification .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Buyer
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Buyer
 :Buyer rdf:type owl:NamedIndividual ,
                 :Customer .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Close
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Close
 :Close rdf:type owl:NamedIndividual ,
                 :Action .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Commit
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Commit
 :Commit rdf:type owl:NamedIndividual ,
                  :Action .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Competition
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Competition
 :Competition rdf:type owl:NamedIndividual ,
                       :Leap .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Complete
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Complete
 :Complete rdf:type owl:NamedIndividual ,
                    :Action .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/DeActivate
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/DeActivate
 :DeActivate rdf:type owl:NamedIndividual ,
                      :Action .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Decision_Maker
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Decision_Maker
 :Decision_Maker rdf:type owl:NamedIndividual ,
                          :Customer .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Delivery
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Delivery
 :Delivery rdf:type owl:NamedIndividual ,
                    :Operation .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Design
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Design
 :Design rdf:type owl:NamedIndividual ,
                  :Qualification .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Designer
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Designer
 :Designer rdf:type owl:NamedIndividual ,
                    :AssistantStaff .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Developer
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Developer
 :Developer rdf:type owl:NamedIndividual ,
                     :AssistantStaff .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Economic
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Economic
 :Economic rdf:type owl:NamedIndividual ,
                    :Impact .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Emotional
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Emotional
 :Emotional rdf:type owl:NamedIndividual ,
                     :Impact .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/End_User
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/End_User
 :End_User rdf:type owl:NamedIndividual ,
                    :Customer .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Environmental
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Environmental
 :Environmental rdf:type owl:NamedIndividual ,
                         :Impact .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Execute
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Execute
 :Execute rdf:type owl:NamedIndividual ,
                   :Action .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Executive
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Executive
 :Executive rdf:type owl:NamedIndividual ,
                     :AssistantStaff .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Failure
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Failure
 :Failure rdf:type owl:NamedIndividual ,
                   :Contribution .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Functional
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Functional
 :Functional rdf:type owl:NamedIndividual ,
                      :Impact .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Funder
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Funder
 :Funder rdf:type owl:NamedIndividual ,
                  :Associate .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Genesis
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Genesis
 :Genesis rdf:type owl:NamedIndividual ,
                   :Operation .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Grant
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Grant
 :Grant rdf:type owl:NamedIndividual ,
                 :Action .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Hardware
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Hardware
 :Hardware rdf:type owl:NamedIndividual ,
                    :Technology .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Incubator
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Incubator
 :Incubator rdf:type owl:NamedIndividual ,
                     :Associate .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Influencer
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Influencer
 :Influencer rdf:type owl:NamedIndividual ,
                      :Customer .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Intangible
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Intangible
 :Intangible rdf:type owl:NamedIndividual ,
                      :Advantage .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Investigator
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Investigator
 :Investigator rdf:type owl:NamedIndividual ,
                        :AssistantStaff .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Journey
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Journey
 :Journey rdf:type owl:NamedIndividual ,
                   :Leap .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Mentor
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Mentor
 :Mentor rdf:type owl:NamedIndividual ,
                  :Associate .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Need
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Need
 :Need rdf:type owl:NamedIndividual ,
                :Trigger .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/New
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/New
 :New rdf:type owl:NamedIndividual ,
               :InitialState .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Opponent
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Opponent
 :Opponent rdf:type owl:NamedIndividual ,
                    :Competitor .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Order
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Order
 :Order rdf:type owl:NamedIndividual ,
                 :Trigger .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Partner
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Partner
 :Partner rdf:type owl:NamedIndividual ,
                   :Associate .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Pivot
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Pivot
 :Pivot rdf:type owl:NamedIndividual ,
                 :Action .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Produce
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Produce
 :Produce rdf:type owl:NamedIndividual ,
                   :TerminalState .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/ReActivate
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/ReActivate
 :ReActivate rdf:type owl:NamedIndividual ,
                      :Action .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Recommender
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Recommender
 :Recommender rdf:type owl:NamedIndividual ,
                       :Customer .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Release
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Release
 :Release rdf:type owl:NamedIndividual ,
                   :TerminalState .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Research
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Research
 :Research rdf:type owl:NamedIndividual ,
                    :Qualification .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Social
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Social
 :Social rdf:type owl:NamedIndividual ,
                  :Impact .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Software
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Software
 :Software rdf:type owl:NamedIndividual ,
                    :Technology .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Start
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Start
 :Start rdf:type owl:NamedIndividual ,
                 :InitialState .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Supplier
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Supplier
 :Supplier rdf:type owl:NamedIndividual ,
                    :Associate .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Suspend
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Suspend
 :Suspend rdf:type owl:NamedIndividual ,
                   :Action .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Synthesis
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Synthesis
 :Synthesis rdf:type owl:NamedIndividual ,
                     :Operation .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/System
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/System
 :System rdf:type owl:NamedIndividual ,
                  :Technology .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Tangible
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Tangible
 :Tangible rdf:type owl:NamedIndividual ,
                    :Advantage .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Transaction
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Transaction
 :Transaction rdf:type owl:NamedIndividual ,
                       :Leap .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Use
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Use
 :Use rdf:type owl:NamedIndividual ,
               :TerminalState .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Validate
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Validate
 :Validate rdf:type owl:NamedIndividual ,
                    :Action .
 
 
-###  http://field33.com/ontologies/@ontologies-contrib/Generic-Innovation-Interoperability/Wrecker
+###  http://field33.com/ontologies/@contrib/generic_innovation_interoperability/Wrecker
 :Wrecker rdf:type owl:NamedIndividual ,
                   :Customer .
 
